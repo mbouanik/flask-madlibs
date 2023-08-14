@@ -1,0 +1,32 @@
+{% extends 'base.html'%} {% block title%} Questions {% endblock %} {% block
+content%}
+
+<div class="title">
+  <h1>Choose Story</h1>
+</div>
+
+<div class="st">
+
+  <form  class='' action="/form">
+  {% for story in all_stories: %}
+  <input type="checkbox" name="{{story}}">
+
+  <div class="story">{{ story }}</div>
+  {% endfor%}
+  <br>
+  <button>Submit your Story</button>
+    </form>
+  
+    <div class="st">
+    
+  <form action="/form">
+    <h1 class="title">Write you own MadLib</h1>
+    <br />
+    <textarea name="mad_lib" id="" cols="30" rows="10" placeholder=" Example: Welcomt to the {place} where you can {verb} or also enjoy {adjective} {noun}"></textarea>
+    <br />
+    <button>Create Your MadLib</button>
+  </form>
+  </div>
+</div> 
+  {% endblock%}
+</div>

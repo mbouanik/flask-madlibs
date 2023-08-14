@@ -1,0 +1,16 @@
+{% extends 'base.html'%} {% block title%} Form {% endblock %} {% block content%}
+<div class="home">
+  <form action="/story">
+    {% for question in questions:%}
+    <label for="{{question}}"> {{question}}: </label>
+    <input type="text" name="{{question}}" />
+    <br />
+    {% endfor %} {% if mad_lib : %}
+    <input type="hidden" name="mad_lib" value="{{mad_lib}}" />
+    <input type="hidden" name="questions" value="{{questions}}" />
+    {% endif %}
+    <button>Submit</button>
+  </form>
+</div>
+
+{% endblock%}

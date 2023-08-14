@@ -1,0 +1,85 @@
+body {
+  background-color: skyblue;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  font-size: 1rem;
+  border-radius: 0.75rem;
+  float: right;
+  height: 1.5rem;
+  justify-content: center;
+}
+form {
+  padding: 0.5rem;
+}
+button {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  color: aliceblue;
+  background-color: #4682b4;
+  border-color: #4682b4;
+}
+.navbar {
+  background-color: #4682b4;
+  padding: 1rem;
+}
+nav a {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+.title,
+.st,
+.home {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+
+  /* justify-items: center; */
+}
+
+.story {
+  background-color: bisque;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+flex: 0 0 33.333333`
+
+  /* flex-basis: 3%; */
+
+  max-width: 40rem;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+}
+.st {
+  /* padding: 1rem; */
+  /* flex-wrap: wrap; */
+}
+
+.title {
+  font-size: 2rem;
+  color: white;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+textarea {
+  width: 50rem;
+  height: 25rem;
+  max-width: 50rem;
+  font-size: 2rem;
+}
+
+.home {
+  font-size: 2rem;
+  color: #4682b4;
+  padding: 2rem;
+}
