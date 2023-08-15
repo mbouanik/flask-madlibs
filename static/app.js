@@ -6,11 +6,6 @@ form.addEventListener("submit", (evt) => {
   checked = document.querySelectorAll("input[type=checkbox]:checked");
   if (checked.length == 1) {
     form.submit();
-  } else if (checked.length > 1) {
-    alert("Only one story at the time.");
-    for (check of checked) {
-      check.checked = false;
-    }
   } else {
     alert("You must select at least one Story.");
   }
