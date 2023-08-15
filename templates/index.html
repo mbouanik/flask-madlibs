@@ -7,22 +7,22 @@ content%}
 
 <div class="st">
 
-  <form  class='' action="/form">
+  <form  id='form' action="/form"  >
   {% for story in all_stories: %}
-  <input type="checkbox" name="{{story}}">
-
-  <div class="story">{{ story }}</div>
+  <input type="checkbox" name="{{story}}" class="checkbox" >
+  <div class="story stories">{{ story }}</div>
+  </input>
   {% endfor%}
   <br>
   <button>Submit your Story</button>
-    </form>
+  </form>
   
     <div class="st">
     
   <form action="/form">
-    <h1 class="title">Write you own MadLib</h1>
+    <h1 class="title">Write your own MadLib</h1>
     <br />
-    <textarea name="mad_lib" id="" cols="30" rows="10" placeholder=" Example: Welcomt to the {place} where you can {verb} or also enjoy {adjective} {noun}"></textarea>
+    <textarea name="mad_lib" id="" cols="30" rows="10" placeholder=" Example: Welcomt to the {place} where you can {verb} or also enjoy {adjective} {noun}" required></textarea>
     <br />
     <button>Create Your MadLib</button>
   </form>

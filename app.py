@@ -13,23 +13,11 @@ all_stories = [
 
 @app.route("/", methods=["GET", "POST"])
 def home():
-    # mad_lib = None
-    # if request.args:
-    #     questions = [
-    #         question[1:-1]
-    #         for question in findall("{[a-zA-Z_]+}", request.args["mad_lib"])
-    #     ]
-    #     mad_lib = request.args["mad_lib"]
-    # else:
-    #     questions = story.prompts
     return render_template("index.html", all_stories=all_stories)
 
 
 @app.route("/form", methods=["GET", "POST"])
 def form():
-    # mad_lib = None
-    # questions = []
-    print(list(request.args)[0])
     if request.args.get("mad_lib"):
         questions = [
             question[1:-1]

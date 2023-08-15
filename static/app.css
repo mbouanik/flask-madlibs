@@ -22,6 +22,10 @@ button {
   background-color: #4682b4;
   border-color: #4682b4;
 }
+
+button:hover {
+  background-color: rgb(52, 97, 221);
+}
 .navbar {
   background-color: #4682b4;
   padding: 1rem;
@@ -37,17 +41,18 @@ nav a {
 .home {
   display: flex;
   justify-content: center;
-  padding: 1rem;
+  padding: 0.5rem;
   flex-wrap: wrap;
 
   /* justify-items: center; */
 }
 
 .story {
-  background-color: bisque;
+  background-color: #4682b4;
+  color: white;
   border-radius: 0.5rem;
   font-size: 1.5rem;
-flex: 0 0 33.333333`
+  flex: 0 0 33.333333;
 
   /* flex-basis: 3%; */
 
@@ -59,6 +64,11 @@ flex: 0 0 33.333333`
 .st {
   /* padding: 1rem; */
   /* flex-wrap: wrap; */
+}
+
+.stories:hover {
+  background-color: rgb(52, 97, 221);
+  color: white;
 }
 
 .title {
@@ -82,4 +92,8 @@ textarea {
   font-size: 2rem;
   color: #4682b4;
   padding: 2rem;
+}
+
+.checkbox {
+  display: none;
 }

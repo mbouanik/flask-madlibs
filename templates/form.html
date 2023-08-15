@@ -3,7 +3,7 @@
   <form action="/story">
     {% for question in questions:%}
     <label for="{{question}}"> {{question}}: </label>
-    <input type="text" name="{{question}}" />
+    <input type="text" name="{{question}}" required />
     <br />
     {% endfor %} {% if mad_lib : %}
     <input type="hidden" name="mad_lib" value="{{mad_lib}}" />
